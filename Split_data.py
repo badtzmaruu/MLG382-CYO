@@ -3,14 +3,14 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 #Load dataset
-data = pd.read_csv('../data/weather_forecast_data.csv', delimiter=",")
+data = pd.read_csv('../Data/weather_cleaned.csv', delimiter=",")
 
 #Split into train/test sets (80/20) with stratified sampling
 train_data, test_data = train_test_split(data, test_size=0.2,random_state=42, stratify=data["Rain"]
 )
 
 #Save to CSV files inside the existing Data folder
-output_path = "../data"
+output_path = "../Data"
 os.makedirs(output_path, exist_ok=True)
 
 train_data.to_csv(os.path.join(output_path, "train_data.csv"), index=False)
