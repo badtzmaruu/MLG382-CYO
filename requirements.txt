@@ -1,4 +1,8 @@
-os
-pandas
-pickle
 dash
+pandas
+numpy
+scikit-learn
+tensorflow
+gunicorn
+xgboost
+dash-bootstrap-components
