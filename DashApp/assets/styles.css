@@ -1,0 +1,54 @@
+/*basic styling for modern look*/
+body {
+    background-color: #f4f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+label {
+    margin-top: 15px;
+    font-weight: 500;
+    color: #34495e;
+}
+input[type="number"] {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+    transition: border-color 0.3s ease-in-out;
+}
+input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+#prediction-output {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 8px 0;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.alert {
+    margin-top: 20px;
+}
